@@ -9,56 +9,53 @@
     <h1>GEOG 370 Homework 3: Map projections</h1>
     <h2>By Abby Burris</h2>
     
-    <p>The first step was to add the Natural Earth shape file to my QGIS document. Then I used to Indicatrix Mapper pluggin to generate Tissot circles. I generated the different projections by changing the coordinate reference system on QGIS.</p>
+    <p>The first step was to add the Natural Earth shape file to my QGIS document. Then I used to Indicatrix Mapper pluggin to generate Tissot circles. I generated the nine different projections by changing the coordinate reference system on QGIS.</p>
     
     <h2>WGS84 Projection - 4326</h2>
-    <p>This projection distorts distance, but it preserves angels and directions. It is used to determine direction while navigating. There is no distortion at the equator, however the distortion increases closer to the poles. </p>
+    <p>This projection distorts area close to the poles, but it preserves angels, directions, and distance. It is used to determine direction while navigating. There is no distortion at the equator, however the distortion increases closer to the poles. </p>
     <a href="./Projections/4326 pt2.png">
     <img src="./Projections/4326 pt2.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <p>This is a modified azimuthal projection. It distorts area, distance, and direction. The Equator and Prime Meridian are both strait, however, the latitude and longitude become increasingly curved closer to the poles.</p>
+    <p>This projection distorts area, distance, and direction. The Equator and Prime Meridian are both strait, however, the meridian and parallels become increasingly curved closer to the poles. This could be used on a small scale where an acurate area measurement isn't required</p>
     <a href="./Projections/54043 pt2.png">
     <img src="./Projections/54043 pt2.png" alt="Aitoff" width='500px'>
     </a>
     <h2>WGS84 Projection - 3857</h2>
-    <p></p>
+    <p>This projection is similar to the Mercator projection, but it does not distort area. There is no distortion around the equator; however, closer to the poles size and distance become distorted. Area is preserved.</p>
     <a href="./Projections/3857 pt2.png">
     <img src="./Projections/3857 pt2.png" alt="WGS84" width='500px'>
     </a>
     <h2>Sphere Winkle 1 - 53018</h2>
-    <h3>Some observations</h3>
+    <p>The parallels remain strait while the meridians curve outward. Scale along the parallels is preserved. Along the meridiums, distance, direction, shape, area, and angle are all distorted. It would not be a good map for navigation or many other purposes. </p>
     <a href="./Projections/53018 pt 2.png">
     <img src="./Projections/53018 pt 2.png" alt="WGS84" width='500px'>
     </a>
     <h2>World Cylindrical Equal Area - 54034</h2>
-    <h3>Some observations</h3>
+    <p>Scale is kept constant along the Equator. Distance, area, and angles are all preserved. However, shape becomes increasingly distored toward the poles.</p>
     <a href="./Projections/54034 pt2.png">
     <img src="./Projections/54034 pt2.png" alt="WGS84" width='500px'>
     </a>
     <h2>World Equidistant Conic - 54027</h2>
-    <h3>Some observations</h3>
+    <p>Distortion is symetrical along each parallel. However, distance, shape, area, and angles are distored along the meridian. This projection is best used when maping areas orienting east to west and at parallels closer to the poles.</p>
     <a href="./Projections/54027 pt2.png">
     <img src="./Projections/54027 pt2.png" alt="WGS84" width='500px'>
     </a>
     <h2>North Pole Azimuthal Equidistant - 102016</h2>
-    <h3>Some observations</h3>
+    <p>This projection is similar in distortion to the projection 54027. Distortion is held constant on each parallel, and the projection gets increasinly distorted in distance, shape, area, and angles as the parallels go futher from the North Pole. While 54027 is a conic projection, 102016 is an Azimuthal projection centering around the North Pole. This map is most useful for navigation around the North Pole.</p>
     <a href="./Projections/102016 pt2.png">
     <img src="./Projections/102016 pt2.png" alt="WGS84" width='500px'>
     </a>
     <h2>World Eckert 1 - 54015</h2>
-    <h3>Some observations</h3>
+    <p>This projection distors distance, area, shape, direction, and angles. Area increases the futher away from the equator, and shape is distorted futheres away from the Prime Meridium. This map doesn't have much use other than presenting an interesting map shape.</p>
     <a href="./Projections/54015.png">
     <img src="./Projections/54015.png" alt="WGS84" width='500px'>
     </a>
     <h2>World Polyconic - 54021</h2>
-    <h3>Some observations</h3>
+    <p>This projection distors distance, area, shape, direction, and angles. Distortion is significant from east to west. The edges of the map have the greated distortion. Distance is greatest along the furthest meridians and shorted along the futherst parallels. There is no distortion along the central meridian, so this map could be used for maping north to south. </p>
     <a href="./Projections/54021.png">
     <img src="./Projections/54021.png" alt="WGS84" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
-    <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
